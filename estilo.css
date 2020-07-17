@@ -2,6 +2,40 @@ body{
 	background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F25%2F83%2F11%2F2583116b735f70d9cec3d32f2b84da9d.jpg&f=1&nofb=1);
 }
 
+.container_margin{
+	margin-top:25px;
+	min-height: 100vh;
+}
+
+.jumbotron{
+	background:transparent !important;
+}
+
+.jumbotron_contacto{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.texto_negro{
+	color:black;
+}
+
+.texto_icono{
+	font-size:36px;
+}
+
+.letra_minuscula{
+	font-size: 12px;
+}
+
+.letra_citas{
+	font-size: 18px;
+}
+
+.python_r{
+	background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);
+}
+
 div.container{
 	background-color: white;
 	} 
