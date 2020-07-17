@@ -98,8 +98,7 @@
 								<li>
 									<h3><b>Estudios de bachillerato 2016</b></h3>
 									<p class="text-justify">
-										Finalicé mis estudios de bachillerato en el colegio
-										San Luis Gonzaga de Majadahonda.
+										Finalicé mis estudios del bachillerato de ciencias sociales.
 									</p>								
 								</li>
 								<li>
@@ -163,7 +162,7 @@
 								<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OVTbe4qHKNJrsdvJYE04AgHaHa%26pid%3DApi&f=1" width='50px' height='50px'>
 							</td>
 							<td>SAS</td>
-							<td>Nivel medio *</td>
+							<td>Nivel medio **</td>
 						</tr>
 						<tr>
 							<td>
@@ -212,6 +211,7 @@
 			</div>
 			<p class="text-justify" style="font-size: 12px;">
 				<b>(*)</b> con certificado <br>
+				<b>(**)</b> en proceso de obtener certificado <br>
 				<b>(L)</b> con certificado de Linkedin
 			</p>
 			<p class="text-justify">
@@ -219,7 +219,19 @@
 			</p>
 			<h2><b>Algunos proyectos personales</b></h2>
 			<hr>
-			<input class="form-control" id="myInput" type="text" placeholder="Filtrar por...">
+			<div class="form-group row">
+				<div class="col-xs-6">
+					<input class="form-control" id="myInput" type="text" placeholder="Filtrar por...">
+				</div>
+				<div class="col-xs-6">
+					<select class="form-control" id="sel1">
+						<option disabled selected value> -- Filtrar por lenguaje -- </option>
+						<option>Python</option>
+						<option>R</option>
+						<option>SAS</option>
+					 </select>
+				</div>
+			</div>
 			<script>
 				$(document).ready(function(){
 				  $("#myInput").on("keyup", function() {
@@ -228,7 +240,13 @@
 					  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 					});
 				  });
-				});
+				  $("#sel1").click(function() {
+					var value = $(this).val().toLowerCase();
+					$("#lista > div > div > div.caption > span").filter(function() {
+					  $(this).parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
+					});
+				  });
+				});		
 			</script>
 			<br>
 			<div id='lista'>
@@ -309,8 +327,7 @@
 								<img src="http://www.ader.es/fileadmin/_processed_/f/8/csm_ine-Instituto-Nacional-de-Estadistica_683a935384.png">
 							</div>
 							<div class='caption'>
-								<span class="label label-warning">Python</span>
-								<span class="label label-primary">R</span>
+								<span class="label" style="background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);">Python R</span>
 								<h3><b>Análisis multivariante de datos del INE</b></h3>
 								<p>
 									<b>Tipo: </b> Análisis multivariante <br>
@@ -354,8 +371,7 @@
 								<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.debate.com.mx%2F__export%2F1520785114623%2Fsites%2Fdebate%2Fimg%2F2018%2F03%2F11%2Faccidente_madrid.jpg_673822677.jpg&f=1&nofb=1">
 							</div>
 							<div class='caption'>
-								<span class="label label-warning">Python</span>
-								<span class="label label-primary">R</span>
+								<span class="label" style="background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);">Python R</span>
 								<h3><b>Regresión logística sobre accidentes en madrid</b></h3>
 								<p>
 									<b>Tipo: </b> Regresión logística <br>
@@ -377,8 +393,7 @@
 								<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic3.elnortedecastilla.es%2Fwww%2Fmultimedia%2F201809%2F18%2Fmedia%2Fcortadas%2FGF0M9Z01-k54C-U60960196413h4H-624x385%40El%2520Norte.jpg&f=1&nofb=1">
 							</div>
 							<div class='caption'>
-								<span class="label label-warning">Python</span>
-								<span class="label label-primary">R</span>
+								<span class="label" style="background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);">Python R</span>
 								<h3><b>Análisis ANOVA del coste laboral</b></h3>
 								<p>
 									<b>Tipo: </b> ANOVA <br>
@@ -400,8 +415,7 @@
 								<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.eco.uva.es%2Festadmed%2Fdatos%2Fseries%2Fgraf13.gif&f=1&nofb=1">
 							</div>
 							<div class='caption'>
-								<span class="label label-warning">Python</span>
-								<span class="label label-primary">R</span>
+								<span class="label" style="background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);">Python R</span>
 								<h3><b>Análisis de series temporales</b></h3>
 								<p>
 									<b>Tipo: </b> Series temporales <br>
@@ -422,8 +436,7 @@
 								<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbiblioteca.umh.es%2Ffiles%2F2017%2F03%2Ftrabajo-fin-de-grado-300x186.png&f=1&nofb=1">
 							</div>
 							<div class='caption'>
-								<span class="label label-warning">Python</span>
-								<span class="label label-primary">R</span>
+								<span class="label" style="background: linear-gradient(to right, #f0ad4e 0%, #f0ad4e 76%, #337ab7 76%, #337ab7 100%);">Python R</span>
 								<h3><b>Trabajo de fín de grado (TFG)</b></h3>
 								<p>
 									<b>Tipo: </b> TFG <br>
