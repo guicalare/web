@@ -1,5 +1,5 @@
 body{
-	background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F25%2F83%2F11%2F2583116b735f70d9cec3d32f2b84da9d.jpg&f=1&nofb=1);
+	background-image:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*OOWSoWHeQ5kyJ4N0P2ptNA.png&f=1&nofb=1);
 }
 
 .container_margin{
@@ -26,6 +26,10 @@ body{
 
 .letra_minuscula{
 	font-size: 12px;
+}
+
+.letra_minuscula2{
+	font-size: 16px;
 }
 
 .letra_citas{
