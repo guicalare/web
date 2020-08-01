@@ -36,7 +36,7 @@
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="index.html" class="language" rel="sp"><span class="flag-icon flag-icon-es"></span> Español</a></li>
-								<li><a href="en/index-en.html" class="language" rel="en"><span class="flag-icon flag-icon-gb"></span> Inglés</a></li>
+								<li><a href="en/index-en.html" class="language" rel="en"><span class="flag-icon flag-icon-gb disabled"></span> Inglés</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -72,7 +72,9 @@
 									</a>
 								</div>
 								<div class="col-sm-4 col-xs-4">
-									<a href="#" class="btn btn-info" role="button">CV en pdf</a>
+									<button class="btn btn-primary disabled" type="button" href="#">
+										CV en pdf
+									</button>
 								</div>
 							</div>
 						</div>
@@ -126,7 +128,7 @@
 					<ul class="timeline">
 						<li>
 							<h3>
-								<img alt='' src='https://www.pixilart.com/images/art/6e0aef329f42fbf.gif?v=1510432500' width='60' height='60'/>
+								<img alt='' src='fotos/dino.gif' width='60' height='60'/>
 								<strong>Por el momento sin experiencia laboral</strong>
 							</h3>
 							<p class="text-justify">
@@ -148,21 +150,21 @@
 						<tbody>
 							<tr>
 								<td>
-									<img alt='' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/200px-Python-logo-notext.svg.png" width='50' height='50'/> 
+									<img alt='' src="fotos/python.png" width='50' height='50'/> 
 								</td>
 								<td>Python</td>
 								<td>Nivel alto (L)</td>
 							</tr>
 							<tr>
 								<td>
-									<img alt='' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OVTbe4qHKNJrsdvJYE04AgHaHa%26pid%3DApi&f=1" width='50' height='50'/>
+									<img alt='' src="fotos/sas.jpeg" width='50' height='50'/>
 								</td>
 								<td>SAS</td>
 								<td>Nivel medio **</td>
 							</tr>
 							<tr>
 								<td>
-									<img alt='' src="https://i.pinimg.com/originals/32/49/65/32496554a4f599228677bbf7919024bb.png" width='50' height='50'/> 
+									<img alt='' src="fotos/R.png" width='50' height='50'/> 
 								</td>
 								<td>R</td>
 								<td>Nivel medio (L)</td>
@@ -176,28 +178,28 @@
 						<tbody>
 							<tr>
 								<td>
-									<img alt='' src="http://software-engineer-training.com/wp-content/uploads/2016/02/mysql_logo-300x300.png" width='50' height='50'/>
+									<img alt='' src="fotos/mysql.png" width='50' height='50'/>
 								</td>
 								<td>MySQL</td>
 								<td>Nivel medio</td>
 							</tr>
 							<tr>
 								<td>
-									<img alt='' src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" width='50' height='50'/>
+									<img alt='' src="fotos/cpp.png" width='50' height='50'/>
 								</td>
 								<td>C++</td>
 								<td>Nivel bajo-medio</td>
 							</tr>
 							<tr>
 								<td>
-									<img alt='' src="https://f5-studio.com/wp-content/uploads/2019/01/what-is-bootstrap-logo.png" width='50' height='50'/>
+									<img alt='' src="fotos/bootstrap.png" width='50' height='50'/>
 								</td>
 								<td>Bootstrap</td>
 								<td>Nivel bajo-medio</td>
 							</tr>
 							<tr>
 								<td>
-									<img alt='' src="https://git-for-windows.github.io/img/git_logo.png" width='50' height='50'/>
+									<img alt='' src="fotos/git.png" width='50' height='50'/>
 								</td>
 								<td>Git</td>
 								<td>Nivel bajo-medio</td>
@@ -228,6 +230,7 @@
 								<option>Python</option>
 								<option>R</option>
 								<option>SAS</option>
+								<option>HTML</option>
 							</select>
 						</div>
 					</div>
@@ -236,7 +239,7 @@
 						<div class='row'>
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										<img alt='' src="https://upload.wikimedia.org/wikipedia/it/9/9e/Degussa.png">
+										<img alt='' src="fotos/degussa.png">
 									</div>
 									<div class='caption'>
 										<span class="label label-warning">Python</span>
@@ -283,7 +286,7 @@
 						<div class='row'>
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										<img alt='' src="https://raw.githubusercontent.com/Guillermo-C-A/spanish-aemet-data-map-generator/master/Some%20examples/ta_temporal_map2019-08-19T16%3A00%3A00.png"/>
+										<img alt='' src="fotos/map.png"/>
 									</div>
 									<div class='caption'>
 										<span class="label label-warning">Python</span>
@@ -307,7 +310,7 @@
 						<div class='row'>
 								<div class="col-sm-6 col-md-4">
 									<div class="thumbnail">
-										<img alt='' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FaGUwcV-7UxI%2Fmaxresdefault.jpg&f=1&nofb=1"/>
+										<img alt='' src="fotos/health.jpeg"/>
 									</div>
 									<div class='caption'>
 										<span class="label label-warning">Python</span>
@@ -334,6 +337,67 @@
 								</div>
 							<hr>
 						</div>
+						<div class='row' id="ocultar">
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<img alt='' src="fotos/fire.gif"/>
+								</div>
+								<div class='caption'>
+									<span class="label label-danger"></span>
+									<h3><strong>Análisis multivariante y cluster</strong></h3>
+									<p>
+										<strong>Tipo: </strong> Reducción de dimensiones y cluster<br>
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-8">
+								<h2><strong>Descripción del proyecto</strong></h2>
+								<p class="text-justify">
+									Este proyecto se encuentra en desarrollo, si estas viendo esto significa que:
+
+									<ul>
+										<li>
+											Se me olvido poner display:none esta fila
+										</li>
+										<li>
+											Has pulsado F12 y has empezado a ojear el código
+
+											<img alt='' src="fotos/lenny.gif"/>
+
+										</li>
+										<li>
+											Me ha delatado mi propio filtrador
+										</li>
+									</ul>
+
+									Base de datos: https://www.kaggle.com/harrywang/wine-dataset-for-clustering
+								</p>				
+							</div>
+							<hr>
+						</div>
+						<div class='row'>
+							<div class="col-sm-6 col-md-4">
+								<div class="thumbnail">
+									<img alt='' src="fotos/cv.png"/>
+								</div>
+								<div class='caption'>
+									<span class="label label-success">HTML</span>
+									<h3><strong>Web del CV online</strong></h3>
+									<p>
+										<strong>Tipo: </strong> Diseño web <br>
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-8">
+								<h2><strong>Descripción del proyecto</strong></h2>
+								<p class="text-justify">
+									Código fuente de mi cv online. Siéntete libre de emplear la plantilla de mi cv :).<br><br>
+
+									Podrás encontrar este proyecto <a href="https://github.com/Guillermo-C-A/cv">en este enlace</a>.
+								</p>				
+							</div>
+							<hr>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -348,6 +412,7 @@
 					$("#lista .row").filter(function() {
 						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 					});
+					$('#ocultar').hide();
 				});
 				$("#sel1").click(function() {
 					var value = $(this).val().toLowerCase();
@@ -355,7 +420,7 @@
 						$(this).parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
 					});
 				});
-			});		
+			});
 		</script>
 		<script>
 			AOS.init();
