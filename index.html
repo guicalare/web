@@ -1,431 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 	<head>
-		<title>Guillermo Calvo Arenaza</title>
+		<title>Bootstrap Example</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		<link href="estilo.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="estilo.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
-	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						Guillermo Calvo Arenaza
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-								<span class="flag-icon flag-icon-es"></span>
-								 Español<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="index.html" class="language" rel="sp"><span class="flag-icon flag-icon-es"></span> Español</a></li>
-								<li><a href="index-en.html" class="language" rel="en"><span class="flag-icon flag-icon-gb disabled"></span> Inglés</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#inicio">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#datos">Información general</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#estudios">Estudios</a>
+				</li>
+		  </ul>
 		</nav>
-		<div class="container container_margin">
-			<div class="jumbotron">
-				<h2><strong>¿Quién soy?</strong></h2>
-				<hr>
-				<div class='row'>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img alt='' src="foto.jpg"/>
-						</div>
-						<div class='caption'>
-							<h3><strong>Guillermo Calvo Arenza</strong></h3>
-							<div><strong style="font-size: 18px">Correo electrónico: </strong> </br>guillermocalvocontacto@gmail.com</div>
-							<div><strong style="font-size: 18px">Fecha de nacimiento: </strong> </br>junio de 1999</div>
-							<div><strong style="font-size: 18px">Carnet de conducir: </strong> <br> Si</div>
-							<div><strong style="font-size: 18px">Idiomas: </strong>  <br> Inglés</div>
-						</div>
-						<div class="jumbotron jumbotron_contacto">
-							<div class="row">
-								<div class="col-sm-4 col-xs-4">
-									<a href="https://www.linkedin.com/in/guillermo-calvo-arenaza-ab98a6196/" class="texto_negro">
-										<i class="fa fa-linkedin-square" style="font-size:36px"></i>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4">
-									<a href="https://github.com/Guillermo-C-A" class="texto_negro">
-										<i class="fa fa-github-square" style="font-size:36px"></i>
-									</a>
-								</div>
-								<div class="col-sm-4 col-xs-4">
-									<button class="btn btn-primary disabled" type="button" href="#">
-										CV en pdf
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="text-justify letra_minuscula">
-							* Puedes pedirme más información o los certificados que creas oportunos enviándome un correo
-						</div>
+		<div id="inicio" class="container-fluid inicio text-center">
+			<div class="mx-auto">
+				<img src="https://static.vecteezy.com/system/resources/previews/000/420/553/original/avatar-icon-vector-illustration.jpg"
+				class="img-responsive rounded-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+				<h2>Guillermo Calvo Arenaza</h2>
+				<h3>Data Scientist</h3>
+				<i class="fas fa-angle-double-down fa-4x"></i>
+			</div>
+		</div>
+		<div id="datos" class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						<i class="fas fa-address-card fa-4x"></i>
 					</div>
-					<div class="col-sm-6 col-md-8">
-							<h2><strong>Situación actual</strong></h2>
-							<p class="text-justify">
-								Me llamo Guillermo y soy un <strong>estudiante de estadística aplicada</strong> por la <strong>Universidad
-								Complutense de Madrid (UCM)</strong>. Actualmente estoy en cuarto de carrera y soy 
-								miembro de la asociación de programación de la Facultad de Estudios Estadísticos (UCM).
-							</p>
-							<h2><strong>Estudios</strong></h2>
-							<div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
-								<ul class="timeline">
-									<li>
-										<h3><strong>Estudios de bachillerato 2016</strong></h3>
-										<p class="text-justify">
-											Finalicé mis estudios del bachillerato de ciencias sociales.
-										</p>								
-									</li>
-									<li>
-										<h3><strong>Ingreso en la UCM (estudios estadísticos) 2016-2017</strong></h3>
-										<p class="text-justify">
-											Inicié mis estudios de estadística aplicada en la UCM.
-										</p>									
-									</li>
-									<li>
-										<h3><strong>Curso de Big Data con Python 2018-2019</strong></h3>
-										<p class="text-justify">
-											Durante mi segundo año de carrera asistí a un curso de Big Data con Python
-											ofertado por la facultad de Informática (UCM).
-										</p>									
-									</li>
-								</ul>	
-							</div>
+					<div class="col-10">
+						<h1 class="text_seccion">Información general</h1>
 					</div>
 				</div>
-				
-				<h2><strong>Breve descripción sobre mí</strong></h2>
-				<p class="text-justify">
-					Me describo como una persona perseverante, dedicada y curiosa, características que me han servido para profundizar más
-					en mis conocimientos (ya sea académicos como personales). Entre mis hobbies cabe remarcar la informática y la programación
-				</p>
-				<h2><strong>Experiencia loboral</strong></h2>
-				<hr>
-				<div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
-					<ul class="timeline">
-						<li>
-							<h3>
-								<img alt='' src='fotos/dino.gif' width='60' height='60'/>
-								<strong>Por el momento sin experiencia laboral</strong>
-							</h3>
-							<p class="text-justify">
-								Esto puede cambiar si buscas un perfil como el mío :)
-							</p>								
-						</li>
-					</ul>
+				<div>
+					<h2 class="text-center">¿Quién soy?</h2>
+					<p>
+						Me llamo Guillermo y soy un estudiante de estadística aplicada por la Universidad Complutense de Madrid (UCM). Actualmente
+						estoy en cuarto de carrera y soy miembro de la asociación de programación de la Facultad de Estudios Estadísticos (UCM). 
+					</p>
+					<p>
+						Me describo como una persona perseverante, dedicada y curiosa, características que me han servido para profundizar más en mis
+						conocimientos (ya sea académicos como personales). Entre mis hobbies cabe remarcar la informática y la programación.
+					</p>
 				</div>
-				<h2><strong>Mis habilidades</strong></h2>
-				<hr>
-				<p class="text-justify">
-					En lo que a mis habilidades respecta (además de mis conocimientos estadísticos), cabe destacar 
-					mis habilidades en <strong> ofimática con un nivel medio-alto </strong> (Microsoft Office, Power Point, etc...)
-					así como mis conocimientos de programación.
-				</p>
-				<h3><strong>Programación orientada a Data Science</strong></h3>
-				<div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
-					<table class="table table-striped table-hover text-center">
-						<tbody>
-							<tr>
-								<td>
-									<img alt='' src="fotos/python.png" width='50' height='50'/> 
-								</td>
-								<td>Python</td>
-								<td>Nivel alto (L)</td>
-							</tr>
-							<tr>
-								<td>
-									<img alt='' src="fotos/sas.jpeg" width='50' height='50'/>
-								</td>
-								<td>SAS</td>
-								<td>Nivel medio **</td>
-							</tr>
-							<tr>
-								<td>
-									<img alt='' src="fotos/R.png" width='50' height='50'/> 
-								</td>
-								<td>R</td>
-								<td>Nivel medio (L)</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<h3><strong>Otros lenguajes/herramientas con las que estoy familiarizado</strong></h3>
-				<div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
-					<table class="table table-striped table-hover text-center">
-						<tbody>
-							<tr>
-								<td>
-									<img alt='' src="fotos/mysql.png" width='50' height='50'/>
-								</td>
-								<td>MySQL</td>
-								<td>Nivel medio</td>
-							</tr>
-							<tr>
-								<td>
-									<img alt='' src="fotos/cpp.png" width='50' height='50'/>
-								</td>
-								<td>C++</td>
-								<td>Nivel bajo-medio</td>
-							</tr>
-							<tr>
-								<td>
-									<img alt='' src="fotos/bootstrap.png" width='50' height='50'/>
-								</td>
-								<td>Bootstrap</td>
-								<td>Nivel bajo-medio</td>
-							</tr>
-							<tr>
-								<td>
-									<img alt='' src="fotos/git.png" width='50' height='50'/>
-								</td>
-								<td>Git</td>
-								<td>Nivel bajo-medio</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="text-justify letra_minuscula">
-					<strong>(*)</strong> con certificado 
-					<strong>(**)</strong> en proceso de obtener certificado 
-					<strong>(L)</strong> con certificado de Linkedin
-				</div>
-				<p class="text-justify">
-					Pese a que no se pueda considerar como una habilidad, también estoy familiarizado con el entorno GNU/Linux
-				</p>
-				<h2><strong>Algunos proyectos personales</strong></h2>
-				Podrás ver todos mis proyectos personales haciendo click en 
-				<a data-toggle="collapse" data-target="#proyectos">este enlace</a>
-				<div id="proyectos" class="collapse">
-					<hr>
-					<div class="form-group row">
-						<div class="col-xs-6">
-							<input class="form-control" id="myInput" type="text" placeholder="Filtrar por...">
-						</div>
-						<div class="col-xs-6">
-							<select class="form-control" id="sel1">
-								<option disabled selected value> -- Filtrar por lenguaje -- </option>
-								<option>Python</option>
-								<option>R</option>
-								<option>SAS</option>
-								<option>HTML</option>
-							</select>
+				<h2 class="text-center">Mis estudios</h2>
+				<div class="row" id="time">
+					<div class="col-md-12">
+						<div class="main-timeline">
+							<div class="timeline">
+								<a href="#" class="timeline-content">
+									<div class="timeline-icon">
+										<i class="fas fa-book-reader"></i>
+									</div>
+									<h3 class="title">Bachillerato</h3>
+									<p class="description">
+										Finalicé mis estudios del bachillerato de ciencias sociales.
+									</p>
+									<span class="timeline-year">2016</span>
+								</a>
+							</div>
+							<div class="timeline">
+								<a href="#" class="timeline-content">
+									<div class="timeline-icon">
+										<i class=" 	fas fa-chalkboard-teacher"></i>
+									</div>
+									<h3 class="title">Curso de Big Data con Python</h3>
+									<p class="description">
+										Durante mi segundo año de carrera asistí a un curso de Big Data con Python ofertado por la facultad de
+										Informática (UCM).
+									</p>
+									<span class="timeline-year">2017</span>
+								</a>
+							</div>
+							<div class="timeline">
+								<a href="#" class="timeline-content">
+									<div class="timeline-icon">
+										<i class="fas fa-user-graduate"></i>
+									</div>
+									<h3 class="title">Graduado en estudios estadisticos</h3>
+									<p class="description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo
+									</p>
+									<span class="timeline-year">2021</span>
+								</a>
+							</div>
 						</div>
 					</div>
-					<br>
-					<div id='lista'>
-						<div class='row'>
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-										<img alt='' src="fotos/degussa.png">
-									</div>
-									<div class='caption'>
-										<span class="label label-warning">Python</span>
-										<h3><strong>Web scrapping de Degussa</strong></h3>
-										<p>
-											<strong>Tipo: </strong> web scraping <br>
-										</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-8">
-									<h2><strong>Descripción del proyecto</strong></h2>
-									<p class="text-justify">
-										Este proyecto consiste en un script de python el cual puede usarse en dos modalidades (con la librería pandas o mediante Selenium)
-										cuyo objetivo es el de obtener los datos de compra y venta de los metales preciosos en Degussa (filial española) y guardar dicha 
-										información en un fichero de datos.<br><br>
-										El script tiene como objetivo <a href="https://www.degussa-mp.es/precios">esta web</a> donde se listan todos los precios. El código
-										lo puedes ver y descargar <a href="https://github.com/Guillermo-C-A/degussa-data-spain">en este enlace</a>.<br><br>
-
-										<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#uso">Condiciones de uso del script</button>
-
-										<div id="uso" class="collapse">
-											<p class="text-justify">
-											<strong>Importante: </strong> antes de usar el código mire <a href="https://shop.degussa-mp.es/condiciones-uso/">las condiciones de uso</a> 
-											de la propia web.<br><br>
-											<strong>Extracto de las condiciones de uso de Degussa</strong>
-											</p>
-											<blockquote>
-												<p class="text-justify letra_citas">
-													"El usuario se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de DEGUSSA METALES PRECIOSOS SL.
-													Podrá visualizar los elementos del portal e incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en
-													cualquier otro soporte físico siempre y cuando sea, única y exclusivamente, para su uso personal y privado. El usuario deberá
-													abstenerse de suprimir, alterar, eludir o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera
-													instalado en las páginas de DEGUSSA METALES PRECIOSOS SL."
-												</p>
-											</blockquote>
-											<p class="text-justify">
-												Por lo que podrás usar este script para fines personales y respetando/limitando las llamadas al enlace. No me hago responsable
-												del mal uso que se le dé al script.
-											</p>
-										</div>
-									</p>						
-								</div>
-						</div>
-						<div class='row'>
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-										<img alt='' src="fotos/map.png"/>
-									</div>
-									<div class='caption'>
-										<span class="label label-warning">Python</span>
-										<h3><strong>De la API de Aemet a un mapa</strong></h3>
-										<p>
-											<strong>Tipo: </strong> Uso de API <br>
-										</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-8">
-									<h2><strong>Descripción del proyecto</strong></h2>
-									<p class="text-justify">
-										Este script de python crea varios mapas a partir de la información que proporciona la API oficial de Aemet. Dichos mapas
-										pueden variar en su temática, desde temperatura media a velocidad del viento (siempre y cuando la API de Aemet proporcione
-										dicha información)<br><br>
-										El código lo puedes ver y descargar <a href="https://github.com/Guillermo-C-A/spanish-aemet-data-map-generator">en este enlace</a>.
-									</p>						
-								</div>
-							<hr>
-						</div>		
-						<div class='row'>
-								<div class="col-sm-6 col-md-4">
-									<div class="thumbnail">
-										<img alt='' src="fotos/health.jpeg"/>
-									</div>
-									<div class='caption'>
-										<span class="label label-warning">Python</span>
-										<h3><strong>Estudio sobre el coste de seguros médicos</strong></h3>
-										<p>
-											<strong>Tipo: </strong> Regresión lineal y ANOVA<br>
-										</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-8">
-									<h2><strong>Descripción del proyecto</strong></h2>
-									<p class="text-justify">
-										Es este proyecto se juega con una base de datos cuya finalidad es la de estudiar el coste final de un seguro médico en función 
-										de varios parámetros como pueden ser: número de hijos, si la persona es fumadora, el índice de masa corporal, etc... La base de 
-										datos se divide en dos grupos: entrenamiento (70%) y test (30%).
-									</p>
-									<p class="text-justify">
-										El estudio se divide en dos bloques. El primer bloque es un análisis descriptivo de la base de datos simple junto con una tabla
-										ANOVA y la segunda parte consta del modelo de regresión lineal. 
-									</p>
-									<p class="text-justify">
-										Podrás encontrar este proyecto <a href="https://github.com/Guillermo-C-A/estudio-regresion/blob/master/regresion.ipynb">en este enlace</a>.
-									</p>				
-								</div>
-							<hr>
-						</div>
-						<div class='row' id="ocultar">
-							<div class="col-sm-6 col-md-4">
-								<div class="thumbnail">
-									<img alt='' src="fotos/fire.gif"/>
-								</div>
-								<div class='caption'>
-									<span class="label label-danger"></span>
-									<h3><strong>Análisis multivariante y cluster</strong></h3>
-									<p>
-										<strong>Tipo: </strong> Reducción de dimensiones y cluster<br>
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-8">
-								<h2><strong>Descripción del proyecto</strong></h2>
-								<p class="text-justify">
-									Este proyecto se encuentra en desarrollo, si estas viendo esto significa que:
-
-									<ul>
-										<li>
-											Se me olvido poner display:none esta fila
-										</li>
-										<li>
-											Has pulsado F12 y has empezado a ojear el código
-
-											<img alt='' src="fotos/lenny.gif"/>
-
-										</li>
-										<li>
-											Me ha delatado mi propio filtrador
-										</li>
-									</ul>
-
-									Base de datos: https://www.kaggle.com/harrywang/wine-dataset-for-clustering
-								</p>				
-							</div>
-							<hr>
-						</div>
-						<div class='row'>
-							<div class="col-sm-6 col-md-4">
-								<div class="thumbnail">
-									<img alt='' src="fotos/cv.png"/>
-								</div>
-								<div class='caption'>
-									<span class="label label-success">HTML</span>
-									<h3><strong>Web del CV online</strong></h3>
-									<p>
-										<strong>Tipo: </strong> Diseño web <br>
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-8">
-								<h2><strong>Descripción del proyecto</strong></h2>
-								<p class="text-justify">
-									Código fuente de mi cv online. Siéntete libre de emplear la plantilla de mi cv :).<br><br>
-
-									Podrás encontrar este proyecto <a href="https://github.com/Guillermo-C-A/cv">en este enlace</a>.
-								</p>				
-							</div>
-							<hr>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<i class="fas fa-code fa-4x"></i>
+					</div>
+					<div class="col-10">
+						<h1 class="text_seccion">Lenguajes de programación</h1>
 					</div>
 				</div>
 			</div>
-		</div>			
-		<div class="footer text-center" style='background-color:#101010'>
-			<br><br><br>
 		</div>
-		<script>
-			$(document).ready(function(){
-				$("#myInput").on("keyup", function() {
-					var value = $(this).val().toLowerCase();
-					$("#lista .row").filter(function() {
-						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-					});
-					$('#ocultar').hide();
-				});
-				$("#sel1").click(function() {
-					var value = $(this).val().toLowerCase();
-					$("#lista > div > div > div.caption > span").filter(function() {
-						$(this).parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
-					});
-				});
-			});
-		</script>
-		<script>
-			$('#ocultar').hide();
-		</script>
-		<script>
-			AOS.init();
-		</script>
 	</body>
 </html>
