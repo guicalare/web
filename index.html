@@ -12,101 +12,235 @@
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#inicio">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#datos">Información general</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#estudios">Estudios</a>
-				</li>
-		  </ul>
-		</nav>
 		<div id="inicio" class="container-fluid inicio text-center">
 			<div class="mx-auto">
 				<img src="https://static.vecteezy.com/system/resources/previews/000/420/553/original/avatar-icon-vector-illustration.jpg"
-				class="img-responsive rounded-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-				<h2>Guillermo Calvo Arenaza</h2>
-				<h3>Data Scientist</h3>
-				<i class="fas fa-angle-double-down fa-4x"></i>
+				class="img-fluid rounded-circle margin" style="display:inline" width="300" height="300" id="avatar">
+				<h3>Guillermo Calvo Arenaza</h3>
+				<h4>Data Scientist</h4>
+				<a class="boton_blanco" href="https://www.linkedin.com/in/guillermo-calvo-arenaza-ab98a6196/?originalSubdomain=es">
+					<i class="fa fa-linkedin-square fa-2x"></i>
+				</a>
+				<a class="boton_blanco" href="https://github.com/Guillermo-C-A">
+					<i class="fa fa-github-square fa-2x"></i>
+				</a>
+				<h3>guillcal@ucm.es</h3>
+				<div class="bounce">
+					<i class="fas fa-angle-double-down fa-4x "></i>
+				</div>
 			</div>
 		</div>
-		<div id="datos" class="jumbotron">
+		<div id="datos" class="jumbotron dec_datos">
 			<div class="container">
 				<div class="row">
-					<div class="col-2">
+					<div class="col-sm-2">
 						<i class="fas fa-address-card fa-4x"></i>
 					</div>
-					<div class="col-10">
+					<div class="col-sm-10">
 						<h1 class="text_seccion">Información general</h1>
 					</div>
 				</div>
 				<div>
-					<h2 class="text-center">¿Quién soy?</h2>
-					<p>
-						Me llamo Guillermo y soy un estudiante de estadística aplicada por la Universidad Complutense de Madrid (UCM). Actualmente
-						estoy en cuarto de carrera y soy miembro de la asociación de programación de la Facultad de Estudios Estadísticos (UCM). 
+					<h3 class="text-center">Información general</h3>
+					<p class="text-justify">
+						En la actualidad estoy matriculado en el cuarto curso del Grado de Estadística Aplicada de la Facultad de Estudios Estadísticos de la UCM.
+						Asimismo soy miembro de la Asociación de Programación de dicha Facultad.
 					</p>
-					<p>
+					<p class="text-justify">
 						Me describo como una persona perseverante, dedicada y curiosa, características que me han servido para profundizar más en mis
 						conocimientos (ya sea académicos como personales). Entre mis hobbies cabe remarcar la informática y la programación.
 					</p>
+					<div class="text-center">
+						<a type="button" class="btn btn-default boton_blanco" href="Natural Language Processing with Python.pdf" download>
+							<i class='far fa-file-pdf fa-2x'></i> Descargar CV en PDF
+						</a>
+						<a type="button" class="btn btn-default boton_blanco" href="Natural Language Processing with Python.pdf" download>
+							<i class='far fa-file-pdf fa-2x'></i> Descargar portafolio en PDF
+						</a>
+					</div>
 				</div>
-				<h2 class="text-center">Mis estudios</h2>
-				<div class="row" id="time">
-					<div class="col-md-12">
-						<div class="main-timeline">
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="timeline-icon">
+			</div>
+		</div>
+		<div id="estudios" class="jumbotron dec_estudios">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<i class="fas fa-user-graduate fa-4x"></i>
+					</div>
+					<div class="col-sm-10">
+						<h1 class="text_seccion">Estudios</h1>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="main-timeline">
+								<div class="timeline">
+									<span class="timeline-icon"></span>
+									<div class="timeline-content">
+										<h3 class="title">Bachillerato</h3>
+										<p class="description text-justify">
+											Finalicé mis estudios del bachillerato de ciencias sociales.
+										</p>
+									</div>
+									<div class="icon">
 										<i class="fas fa-book-reader"></i>
+										<span class="year">2016</span>
 									</div>
-									<h3 class="title">Bachillerato</h3>
-									<p class="description">
-										Finalicé mis estudios del bachillerato de ciencias sociales.
-									</p>
-									<span class="timeline-year">2016</span>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="timeline-icon">
-										<i class=" 	fas fa-chalkboard-teacher"></i>
+								</div>
+								<div class="timeline">
+									<span class="timeline-icon"></span>
+									<div class="timeline-content">
+										<h3 class="title">Curso "Big Data con Python"</h3>
+										<p class="description text-justify">
+											Durante mi segundo año de carrera asistí a un curso de Big Data con Python ofertado por la facultad de
+											Informática (UCM).
+										</p>
 									</div>
-									<h3 class="title">Curso de Big Data con Python</h3>
-									<p class="description">
-										Durante mi segundo año de carrera asistí a un curso de Big Data con Python ofertado por la facultad de
-										Informática (UCM).
-									</p>
-									<span class="timeline-year">2017</span>
-								</a>
-							</div>
-							<div class="timeline">
-								<a href="#" class="timeline-content">
-									<div class="timeline-icon">
+									<div class="icon">
+										<i class="fas fa-chalkboard-teacher"></i>
+										<span class="year">2018</span>
+									</div>
+								</div>
+								<div class="timeline">
+									<span class="timeline-icon"></span>
+									<div class="timeline-content">
+										<h3 class="title">Curso "Python and Statistics for Financial Analysis"</h3>
+										<p class="description text-justify">
+											Durante mi tercer año de carrera realicé el curso de "Python and Statistics for Financial Analysis"
+											ofertada por la universidad de Hong Kong de ciencias y tecnología.
+											</br></br>
+											<img src="Coursera-1.png" width="100%" height="100%" />
+											<a type="button" class="btn btn-default boton_blanco" href="https://coursera.org/share/9e110de5bf6cfcab58afd4e96582c6d4">
+												<div class="text-center"><i class='fas fa-award fa-2x'></i> Enlace al certificado</div>
+											</a>
+										</p>
+									</div>
+									<div class="icon">
+										<i class="fas fa-chalkboard-teacher"></i>
+										<span class="year">2020</span>
+									</div>
+								</div>
+								<div class="timeline">
+									<span class="timeline-icon"></span>
+									<div class="timeline-content">
+										<h3 class="title">Estudios estadísticos (UCM)</h3>
+										<p class="description text-justify">
+											Actualmente me encuentro cursando cuarto de "Estudios estadísticos" en la facultad de Estadística
+											(UCM)
+										</p>
+									</div>
+									<div class="icon">
 										<i class="fas fa-user-graduate"></i>
+										<span class="year">2020</span>
 									</div>
-									<h3 class="title">Graduado en estudios estadisticos</h3>
-									<p class="description">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo
-									</p>
-									<span class="timeline-year">2021</span>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="container">
 				<div class="row">
-					<div class="col-2">
-						<i class="fas fa-code fa-4x"></i>
+					<div class="col-sm-2">
+						<i class="fas fas fa-code fa-4x"></i>
 					</div>
-					<div class="col-10">
+					<div class="col-sm-10">
 						<h1 class="text_seccion">Lenguajes de programación</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					<div class="col-md-6">
+						<h3 class="text-center">Orientado a Data Science</h3>
+						<h3 class="progressbar-title">Python</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 100%; background: #f4a24c;">
+								<span class="progress-value">Nivel alto</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="progressbar-title">R</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 75%; background: #f4a24c;">
+								<span class="progress-value">Nivel medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="progressbar-title">SAS</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 75%; background: #f4a24c;">
+								<span class="progress-value">Nivel medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="text-center">Otros lenguajes, herramientas y entornos con los que estoy familiarizado</h3>
+						<h3 class="progressbar-title">Git</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 75%; background: #f4a24c;">
+								<span class="progress-value">Nivel medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="progressbar-title">MySQL</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 75%; background: #f4a24c;">
+								<span class="progress-value">Nivel medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="progressbar-title">GNU/Linux</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 50%; background: #f4a24c;">
+								<span class="progress-value">Nivel bajo-medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+						<h3 class="progressbar-title">C++</h3>
+						<div class="progress">
+							<div class="progress-bar" style="width: 50%; background: #f4a24c;">
+								<span class="progress-value">Nivel bajo-medio</span>
+								<span class="progress-icon" style="border-bottom-color: #f4a24c;"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="trabajo" class="jumbotron dec_trabajo">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<i class="fas fa-briefcase fa-4x" id="icon_titulo"></i>
+					</div>
+					<div class="col-sm-10">
+						<h1 class="text_seccion">Experiencia laboral</h1>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row" id="time">
+						<div class="col-md-12">
+							<div class="main-timeline2">
+								<div class="timeline2">
+									<a href="https://estudiosestadisticos.ucm.es/" class="timeline2-content">
+										<div class="timeline2-icon">
+											<img src="fotos/ucm.png" class="img_icon img-responsive rounded-circle margin">
+										</div>
+										<h3 class="title">Becario UCM 2020-2021</h3>
+										<p class="description text-justify">
+											Realicé las prácticas de formación ofertadas por la facultad de estudios estadísticos.
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
