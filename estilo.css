@@ -57,12 +57,6 @@ body {
 	color:white;
 }
 
-@media only screen and (max-height: 640px){
-	.inicio{
-		height: 640px;
-	}
-}
-
 #estudios {
 	background-color:rgb(14, 33, 37);
 	color:white;
