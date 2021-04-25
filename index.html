@@ -1,227 +1,397 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <title>Guillermo CV</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="jquery.min.js"></script>
-  <script src="popper.min.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link  rel='stylesheet' href="style.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <div class="parallax text-center">
-    <div class="jumbotron text-center" style="margin-bottom:0; background-color:#ffffff00;">
-      <h1><b>Mi CV Online</b></h1>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-  
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#sobre_mi">Sobre mí</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#educacion">Educación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#laboral">Experiencia laboral</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#proyectos">Proyectos</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-lg-3" style="top: 50px;padding-bottom: 20px;">
-      <div class="sidebar-item">
-        <div class="make-me-sticky">
-          <img class="rounded-circle img-fluid" src="foto.jpg" style="width:100%">
-          <p class="text-center"><b>Guillermo Calvo Arenaza</b></p>
-          <p class="text-center">Data scientists</p>
-          <p class="text-center"><i class='fas fa-envelope-open'></i> guicalareinfo@gmail.com</p>
-          <p class="text-center"><i class='fas fa-compass'></i> Madrid</p>
-          <div class="text-center">
-            <a href="https://github.com/guicalare" style="color:#343a40;"><i class="fab fa-github" style='font-size:36px'></i></a>
-            <a href="https://es.linkedin.com/in/guillermo-calvo-arenaza-ab98a6196" style="color: #343a40;"><i class="fab fa-linkedin" style='font-size:36px'></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-9 ">
-      <div class="parallax_content_1 text-center" style="height: 200px;" id="sobre_mi">
-        <div class="jumbotron text-center" style="margin-bottom:0; background-color:#ffffff00;">
-          <h1><b>Sobre mí</b></h1>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <div class="sobre_mi">
-          <div class="media border p-3" style="border: 0px !important;">
-            <img src="foto.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-            <div class="media-body">
-              <h3><b>Guillermo Calvo Arenaza </b><small><i>Data scientists</i></small></h3>
-              <div class="text-center">
-                <i class='fas fa-envelope-open'></i> guicalareinfo@gmail.com
-                <i class='fas fa-compass'></i> Madrid
-                <a href="https://github.com/guicalare" style="color: #343a40;font-weight: 900;"><i class="fab fa-github"></i></a>
-                <a href="https://es.linkedin.com/in/guillermo-calvo-arenaza-ab98a6196" style="color: #343a40;font-weight: 900;"><i class="fab fa-linkedin"></i></a>  
-              </div>
+<html>
+    <head>
+        <title>Guillermo CV</title>
+        <link rel="icon" href="img/pi.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+            <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar style="position: relative; z-index: 1000;">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle" type="button" uk-toggle="target: #offcanvas-nav-primary">
+                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-nav-header">Información</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span> guicalareinfo@gmail.com</li>
+                        <li><span class="uk-margin-small-right" uk-icon="icon: location"></span> Las Rozas de Madrid</li>
+                        <li class="uk-nav-header">Dónde encontrarme</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="https://github.com/guicalare"><span class="uk-margin-small-right" uk-icon="icon:  github"></span> Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/guicalare/"><span class="uk-margin-small-right" uk-icon="icon:  linkedin"></span> Linkdln</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-        Estoy en cuarto de Estadística Aplicada (UCM). En mi tiempo libre me gusta programar y aprender tecnologías nuevas.
-      </div>
-      <div class="parallax_content_2 text-center" style="height: 200px;" id="educacion">
-        <div class="jumbotron text-center" style="margin-bottom:0; background-color:#ffffff00;">
-          <h1><b>Educación</b></h1>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <h3>Estudios</h3>
-        <hr>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="ucm.gif" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>Grado de Estadística Aplicada <small><i>2017-2021</i></small></h4>
-            <!--
-            <p>Graduado por la <a href="https://estudiosestadisticos.ucm.es/">Universidad Complutense de Madrid</a> en Estadística.</p>
-            -->
-            <p>Actualmente me encuentro cursando cuarto de Estadística Aplicada</p>
-          </div>
-        </div>
-        <h3>Lenguajes y herramientas de Data science</h3>
-        <hr>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="python.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>Python</h4>
-            <p>Web scraping, representación/depuración de datos.</p>      
-          </div>
-        </div>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="R.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>R</h4>
-            <p>Machine learning, representación/depuración de datos y series temporales.</p>      
-          </div>
-        </div>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="sas.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>SAS <small>con certificado</small></h4>
-            <p>Machine learning y representación/depuración de datos.</p>      
-          </div>
-        </div>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="spss.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>SPSS</h4>
-            <p>Machine learning, depuración de datos y series temporales.</p>      
-          </div>
-        </div>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="git.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>Git</h4>
-            <p>Control de versiones y código.</p>
-          </div>
-        </div>
-        <h3>Certificados</h3>
-        <hr>
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active" style="filter: invert(100%);"></li>
-            <li data-target="#demo" data-slide-to="1" style="filter: invert(100%);"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Coursera1.png"width="1100" height="500">
-              <div class="carousel-caption">
-                <a href="https://coursera.org/share/9e110de5bf6cfcab58afd4e96582c6d4" class="btn btn-warning" role="button">Más información</a>
-                <h3></h3>
-                <p></p>
-              </div>   
+        <div class="uk-container">
+            <br>
+            <article class="uk-comment">
+                <header class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-comment-avatar uk-border-circle" src="img/foto.jpg" width="80" height="80" alt="">
+                        </div>
+                        <div class="uk-width-expand">
+                            <h4 class="uk-comment-title uk-margin-remove">Guillermo Calvo Arenaza</h4>
+                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                <li><a href="#">Data scientist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>
+                        ¡Hola buenas!, soy Guillermo, un apasionado de la ciencia, tecnología y números. En mi tiempo libre me encanta escribir código, aprender cosas nuevas y escuchar música.
+						Sería difícil describirme, ya que tu tiempo es oro y esta web sería infinita, es por ello que te dejo aquí mis principales cualidades.
+                    </p>
+                </div>
+            </article>
+            <br>
+            <div uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 400; repeat: true">
+                <div class="uk-width-auto@m" uk-scrollspy-class="uk-animation-slide-left">
+                    <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                        <li><a href="#">Flexibilidad</a></li>
+                        <li><a href="#">Profesionalidad</a></li>
+                        <li><a href="#">Trabajo en equipo</a></li>
+                    </ul>
+                </div>
+                <div class="uk-width-expand@m" uk-scrollspy-class="uk-animation-slide-right">
+                    <ul id="component-tab-left" class="uk-switcher">
+                        <li>
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container">
+                                    <img src="img/flexible.png" alt="" uk-cover>
+                                    <canvas width="400" height="250"></canvas>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Da igual las herramientas o el entorno</h3>
+                                        <p>Me adapto a todas las circunstancias, situaciones y necesidades que surjan o se me presenten.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container">
+                                    <img src="img/profesionalidad.png" alt="" uk-cover>
+                                    <canvas width="400" height="250"></canvas>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Las cosas bien hechas, bien están</h3>
+                                        <p>Soy una persona meticulosa y perfeccionista con todo lo que hago.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container">
+                                    <img src="img/equipo.png" alt="" uk-cover>
+                                    <canvas width="400" height="250"></canvas>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">La unión hace la fuerza</h3>
+                                        <p>Estoy acostumbrado a trabajar en equipo. Prueba de ello son los proyectos open source y asociaciones en las que he participado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="Coursera2.jpg"width="1100" height="500">
-              <div class="carousel-caption">
-                <a href="https://www.coursera.org/account/accomplishments/verify/8Y5BLWQY7T52" class="btn btn-warning" role="button">Más información</a>
-                <h3></h3>
-                <p></p>
-              </div>   
+            <br>
+            <div uk-scrollspy="cls: uk-animation-slide-left; target: .uk-heading-line; delay: 300">
+                <h1 class="uk-heading-line uk-text-center"><span>Estudios y certificados</span></h1>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+            <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Grado Estadística Aplicada</h3>
+                        <p>2017 - 2021</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Certificado SAS <span uk-icon="cog"></span>
+                        </h3>
+                        <p>2021</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <h3 class="uk-card-title">Big Data con Python</h3>
+                        <p>2019 - 2021</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div uk-scrollspy="cls: uk-animation-slide-left; target: .uk-heading-line; delay: 300">
+                <h1 class="uk-heading-line uk-text-center"><span>Experiencia laboral</span></h1>
+            </div>
+            <div class="uk-slider-container-offset" uk-slider uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 100;repeat: true">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top" height="310">
+                                    <img src="img/hacienda.png" alt="" height="310">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Instituto de Estudios Fiscales (Prácticas)</h3>
+                                    <p>febrero - mayo 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+            <br>
+            <div uk-scrollspy="cls: uk-animation-slide-left; target: .uk-heading-line; delay: 300">
+                <h1 class="uk-heading-line uk-text-center"><span>Herramientas Data Science</span></h1>
+            </div>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 1500" uk-slideshow="ratio: 2:3">
+
+                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <svg viewBox="0 0 128 128">
+                            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><path fill="url(#a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137h-33.961c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491v-11.282c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548v-23.513c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zm-13.354 7.569c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"></path><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655h-24.665c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412h-24.664v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zm-13.873 59.547c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"></path><radialGradient id="c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop></radialGradient><path opacity=".444" fill="url(#c)" enable-background="new" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"></path>
+                        </svg> 
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 128 128">
+                            <g> <rect fill="none" x="-143.76" y="4.24" width="119.53" height="119.53"></rect> <g> <path fill="#293138" d="M109.01,28.64L71.28,6.24C69.03,4.91,66.51,4.24,64,4.24s-5.03,0.67-7.28,2.01l-37.74,22.4 c-4.5,2.67-7.28,7.61-7.28,12.96v44.8c0,5.35,2.77,10.29,7.28,12.96l37.73,22.4c2.25,1.34,4.76,2,7.28,2c2.51,0,5.03-0.67,7.28-2 l37.74-22.4c4.5-2.67,7.28-7.62,7.28-12.96V41.6C116.29,36.26,113.52,31.31,109.01,28.64z M79.79,98.59l0.06,3.22 c0,0.39-0.25,0.83-0.55,0.99l-1.91,1.1c-0.3,0.15-0.56-0.03-0.56-0.42l-0.03-3.17c-1.63,0.68-3.29,0.84-4.34,0.42 c-0.2-0.08-0.29-0.37-0.21-0.71l0.69-2.91c0.06-0.23,0.18-0.46,0.34-0.6c0.06-0.06,0.12-0.1,0.18-0.13 c0.11-0.06,0.22-0.07,0.31-0.03c1.14,0.38,2.59,0.2,3.99-0.5c1.78-0.9,2.97-2.72,2.95-4.52c-0.02-1.64-0.9-2.31-3.05-2.33 c-2.74,0.01-5.3-0.53-5.34-4.57c-0.03-3.32,1.69-6.78,4.43-8.96l-0.03-3.25c0-0.4,0.24-0.84,0.55-1l1.85-1.18 c0.3-0.15,0.56,0.04,0.56,0.43l0.03,3.25c1.36-0.54,2.54-0.69,3.61-0.44c0.23,0.06,0.34,0.38,0.24,0.75l-0.72,2.88 c-0.06,0.22-0.18,0.44-0.33,0.58c-0.06,0.06-0.13,0.11-0.19,0.14c-0.1,0.05-0.19,0.06-0.28,0.05c-0.49-0.11-1.65-0.36-3.48,0.56 c-1.92,0.97-2.59,2.64-2.58,3.88c0.02,1.48,0.77,1.93,3.39,1.97c3.49,0.06,4.99,1.58,5.03,5.09 C84.45,92.62,82.61,96.33,79.79,98.59z M99.57,93.18c0,0.3-0.04,0.58-0.29,0.72l-9.54,5.8c-0.25,0.15-0.45,0.02-0.45-0.28v-2.46 c0-0.3,0.18-0.46,0.43-0.61l9.4-5.62c0.25-0.15,0.45-0.02,0.45,0.28V93.18z M106.13,38.09l-35.7,22.05 c-4.45,2.6-7.73,5.52-7.74,10.89v43.99c0,3.21,1.3,5.29,3.29,5.9c-0.65,0.11-1.32,0.19-1.98,0.19c-2.09,0-4.15-0.57-5.96-1.64 l-37.73-22.4c-3.69-2.19-5.98-6.28-5.98-10.67V41.6c0-4.39,2.29-8.48,5.98-10.67l37.74-22.4c1.81-1.07,3.87-1.64,5.96-1.64 s4.15,0.57,5.96,1.64l37.74,22.4c3.11,1.85,5.21,5.04,5.8,8.63C112.24,36.89,109.42,36.17,106.13,38.09z"></path> </g> </g>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 128 128">
+                            <defs> <linearGradient id="gradientFill-1" x1=".74144" x2="590.86" y1="3.6658" y2="593.79" gradientTransform="matrix(.2169 0 0 .14527 -.16082 14.112)" gradientUnits="userSpaceOnUse"> <stop stop-color="#cbced0" offset="0"></stop> <stop stop-color="#84838b" offset="1"></stop> </linearGradient> <linearGradient id="gradientFill-2" x1="301.03" x2="703.07" y1="151.4" y2="553.44" gradientTransform="matrix(.17572 0 0 .17931 -.16082 14.112)" gradientUnits="userSpaceOnUse"> <stop stop-color="#276dc3" offset="0"></stop> <stop stop-color="#165caa" offset="1"></stop> </linearGradient> </defs> <path d="m64 100.38c-35.346 0-64-19.19-64-42.863 0-23.672 28.654-42.863 64-42.863s64 19.19 64 42.863c0 23.672-28.654 42.863-64 42.863zm9.7963-68.967c-26.866 0-48.646 13.119-48.646 29.303 0 16.183 21.779 29.303 48.646 29.303 26.866 0 46.693-8.9693 46.693-29.303 0-20.327-19.827-29.303-46.693-29.303z" fill="url(#gradientFill-1)" fill-rule="evenodd" stroke-width=".17751"></path> <path d="m97.469 81.033s3.8736 1.1689 6.124 2.3076c0.78086 0.39513 2.1319 1.1836 3.1064 2.2189 0.95464 1.0139 1.4201 2.0413 1.4201 2.0413l15.266 25.739-24.674 0.011-11.538-21.667s-2.3626-4.0594-3.8164-5.2365c-1.2127-0.9818-1.7298-1.3313-2.9289-1.3313h-5.8624l0.0046 28.219-21.833 9e-3v-72.084h43.844s19.97 0.36016 19.97 19.359c0 18.999-19.082 20.413-19.082 20.413zm-9.4967-24.137-13.218-0.0085-0.0066 12.257 13.224-0.0043s6.124-0.01899 6.124-6.235c0-6.3409-6.124-6.0092-6.124-6.0092z" fill="url(#gradientFill-2)" fill-rule="evenodd" stroke-width=".17751"></path>
+                        </svg> 
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#F34F29" d="M124.737 58.378l-55.116-55.114c-3.172-3.174-8.32-3.174-11.497 0l-11.444 11.446 14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679-3.78 3.78-9.901 3.78-13.683 0-2.842-2.844-3.545-7.019-2.105-10.521l-13.048-13.048-.002 34.341c.922.455 1.791 1.063 2.559 1.828 3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683.934-.933 2.014-1.638 3.167-2.11v-34.659c-1.153-.472-2.231-1.172-3.167-2.111-2.862-2.86-3.551-7.06-2.083-10.576l-14.313-14.313-37.792 37.79c-3.175 3.177-3.175 8.325 0 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858c3.174-3.176 3.174-8.327-.001-11.501z"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#00618A" d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927-4.894-3.092-17.448-9.817-21.072-.975-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z"></path>
+                        </svg> 
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="uk-slider-container-offset" uk-slider>
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid" uk-scrollspy="target: > li; cls: uk-animation-slide-bottom; delay: 300; repeat: true">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">SAS</h3>
+                                    <p>
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                            <li>Depuración de datos</li>
+                                            <li>Machine learning</li>
+                                            <li>Visualización de datos</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Python</h3>
+                                    <p>
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                            <li>Depuración de datos</li>
+                                            <li>Machine learning</li>
+                                            <li>Web scraping</li>
+                                            <li>Visualización de datos</li>
+                                            <li><span uk-icon="cog" style="color: #999;"></span>Pyspark</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">R</h3>
+                                    <p>
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                            <li>Depuración de datos</li>
+                                            <li>Machine learning</li>
+                                            <li>Visualización de datos</li>
+                                            <li>Series temporales</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">SPSS</h3>
+                                    <p>
+                                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                            <li>Depuración de datos</li>
+                                            <li>Machine learning</li>
+                                            <li>Visualización de datos</li>
+                                            <li>Series temporales</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+            <hr class="uk-divider-icon">
+            <br>
+            <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('img/proyecto.jpg');">
+                <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Algunos proyectos y trabajos</h1>
+                </div>
+            </div>
+            <br>
+            <div class="uk-slider-container-offset" uk-slider>
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-3@s uk-grid" uk-scrollspy="target: > li; cls: uk-animation-slide-bottom; delay: 300; repeat: true">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Análisis cluster (provincias España)</h3>
+                                    <p>Clasificación de las provincias mediante reducción de dimensiones y análisis cluster (SAS)</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/trabajos-universidad/blob/main/Analisis%20cluster%202.pdf" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="file-pdf"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Análisis logit y probit de sueldos (SPSS)</h3>
+                                    <p>Estudio de asociación de sueldos y análisis logit/probit para realizar clasificaciones de individuos</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/trabajos-universidad/blob/main/Practica%20de%20t%C3%A9cnicas%20multivariantes%20II.pdf" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="file-pdf"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Web Scraping de Degussa (Python)</h3>
+                                    <p>Código para la extracción de precios de venta y compra de materias primas así como su posterior almacenaje</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/degussa-data-spain" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="github"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Mapas meteorológicos (Python)</h3>
+                                    <p>Generador de mapas meteorológicos mediante y sintetizador de datos de la API de AEMET </p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/spanish-aemet-data-map-generator" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="github"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Asociación de programación (UCM)</h3>
+                                    <p>Vocal y diseñador web en la asociación de programación de la facultad de estudios estadísticos</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://www.importcoffee.es/" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="link"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Herramienta informática en Linux (Python)</h3>
+                                    <p>Alternativa ligera a lm-sensors para monitorear los recursos de un sistema GNU/Linux</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/Hwmon-python" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="github"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Visualización gráfica animada (Python)</h3>
+                                    <p>Código con el que poder realizar representaciones gráficas animadas mediante varias imágenes</p>
+                                    <div class="uk-card-footer">
+                                        <a href="https://github.com/guicalare/Img2gif" class="uk-button uk-button-text" style="color: #666;">
+                                            <span uk-icon="github"></span>
+                                            Visitar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>  
+        </div>   
+        <div class="uk-section uk-section-muted">
+            <div class="uk-container">
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><span class="uk-margin-small-right" uk-icon="icon: mail"></span> guicalareinfo@gmail.com</li>
+                    <li><a href="https://github.com/guicalare"><span class="uk-margin-small-right" uk-icon="icon:  github"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/guicalare/"><span class="uk-margin-small-right" uk-icon="icon:  linkedin"></span></a></li>
+                    <li><a href="#target" uk-icon="chevron-up" uk-scroll></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="parallax_content_3 text-center" style="height: 200px;" id="laboral">
-        <div class="jumbotron text-center" style="margin-bottom:0; background-color:#ffffff00;">
-          <h1><b>Experiencia laboral y colaboraciones</b></h1>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="importcoffee.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>Desarrollador principal en <a href="https://import-coffee.github.io/web/">Import Coffee</a> <small><i>Junio de 2019 - Actualidad</i></small></h4>
-            <p>
-              Me encargo del desarrollo/mantenimiento web de la asociación de programación de la Facultad de Estudios Estadísticos (UCM) así como
-              trabajar en los proyectos propuestos por la misma.
-            </p>      
-          </div>
-        </div>
-        <div class="media border p-3" style="border: 0px !important;">
-          <img src="espanna.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-          <div class="media-body">
-            <h4>Prácticas en el <a href="https://www.ief.es/">Instituto de Estudios Fiscales</a> (Hacienda) <small><i>Febrero de 2021 - Abril de 2021</i></small></h4>
-            <p>Durante mi último año de carrera realicé tanto mis prácticas como el TFG en el Instituto de Estudios Fiscales del ministerio de Hacienda.</p>      
-          </div>
-        </div>
-      </div>
-      <div class="parallax_content_4 text-center" style="height: 200px;" id="proyectos">
-        <div class="jumbotron text-center" style="margin-bottom:0; background-color:#ffffff00;">
-          <h1><b>Algunos proyectos personales</b></h1>
-        </div>
-      </div>
-      <div class="jumbotron">
-        <p>
-          Soy un apasionado del OpenSource y he participado en el desarrollo de algunos proyectos en equipo así como en ideas propias. Estos son algunos trabajos:
-        </p>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Generador de mapas con datos de AEMET
-            <a href="https://github.com/Guillermo-C-A/spanish-aemet-data-map-generator" class="btn btn-warning" role="button">Visitar</a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Web scrapper Degussa
-            <a href="https://github.com/Guillermo-C-A/degussa-data-spain" class="btn btn-warning" role="button">Visitar</a>
-          </li>
-        </ul> 
-        <p style="margin-top: 1rem;">
-          Para más información, visita mi página de <a href="https://github.com/guicalare">Github</a>.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+    </body>
 </html>
+
